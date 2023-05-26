@@ -1,4 +1,4 @@
-package com.example.a7month_project.presentation
+package com.example.a7month_project.presentation.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
