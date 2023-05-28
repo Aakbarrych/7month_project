@@ -3,6 +3,7 @@ plugins {
     id(Plugins.Kotlin.android)
     id(Plugins.Kotlin.kapt)
     id(Plugins.DaggerHilt.hilt)
+    //id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -44,6 +45,8 @@ dependencies {
     implementation(Deps.UI.appcompat)
     implementation(Deps.UI.material)
     implementation(Deps.UI.constraint)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
     testImplementation(Deps.UI.junit)
     androidTestImplementation(Deps.UI.extJunit)
     androidTestImplementation(Deps.UI.espresso)

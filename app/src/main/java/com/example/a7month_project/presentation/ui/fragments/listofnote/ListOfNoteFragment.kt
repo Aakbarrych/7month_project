@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.example.a7month_project.R
 import com.example.a7month_project.databinding.FragmentListOfNoteBinding
 import com.example.a7month_project.presentation.base.BaseFragment
 import com.example.a7month_project.presentation.utils.UIState
@@ -28,6 +30,11 @@ class ListOfNoteFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         getAllNotes()
+        initListener()
+    }
+
+    private fun initListener(){
+        findNavController().navigate(R.id.action_listOfNoteFragment_to_editListFragment)
     }
 
     private fun getAllNotes(){
